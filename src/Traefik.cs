@@ -1,6 +1,4 @@
-﻿using Traefik.Configuration.Library.Middlewares;
-
-namespace Traefik.Configuration.Library;
+﻿namespace Traefik.Configuration.Library;
 
 public class Traefik
 {
@@ -13,8 +11,8 @@ public class Traefik
     [JsonPropertyName("entryPoints")]
     public IDictionary<string, EntryPoint>? EntryPoints { get; set; }
 
-    [JsonPropertyName("middlewares")]
-    public IDictionary<string, Middleware>? Middlewares { get; set; }
+    [JsonPropertyName("http")]
+    public Http? Http { get; set; }
 
     [JsonPropertyName("api")]
     public API? API { get; set; }
