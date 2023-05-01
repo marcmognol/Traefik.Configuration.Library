@@ -14,6 +14,12 @@ public class Traefik
     [JsonPropertyName("http")]
     public Http? Http { get; set; }
 
+    [JsonPropertyName("tcp")]
+    public Tcp? Tcp { get; set; }
+
+    [JsonPropertyName("udp")]
+    public Udp? Udp { get; set; }
+
     [JsonPropertyName("api")]
     public API? API { get; set; }
 
