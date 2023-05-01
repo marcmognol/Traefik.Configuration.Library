@@ -3,11 +3,11 @@ using Traefik.Configuration.Library.Routers;
 
 namespace Traefik.Configuration.Library;
 
-public class Http
+public class Tcp
 {
     [JsonPropertyName("routers")]
     public IDictionary<string, TcpRouter>? Routers { get; set; }
 
     [JsonPropertyName("middlewares")]
-    public IDictionary<string, HttpMiddleware>? Middlewares { get; set; }
+    public IDictionary<string, TcpMiddleware>? Middlewares { get; set; }
 }
